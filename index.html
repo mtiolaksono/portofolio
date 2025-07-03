@@ -95,6 +95,10 @@
 			padding: 20px;
 		}
 
+		@media (max-width: 960px) {
+			#section-about .uk-grid > div { text-align: center; }
+		}
+
 	</style>
 </head>
 <body>
@@ -150,29 +154,37 @@
 			</div>
 		</div>
 
-		<!-- Section About -->
-		<div id="section-about">
-			<div class="uk-container about-container">
-				<!-- Text Content -->
-				<div class="about-text">
-					<h3>Hello, It's My Story</h3>
-					<p>
-						My name is Muhammad Tio Laksono. I'm an experienced IT professional with a strong background in IT infrastructure and fullstack development.
-					</p>
-					<p>
-						I have 4 years of experience in IT infrastructure and 5 years as a Fullstack Developer.
-						I specialize in building web and mobile applications using technologies such as PHP, HTML, CSS, JavaScript, Java (Android), Kotlin (Android), Laravel, Flutter, and databases like PostgreSQL, Microsoft SQL Server, IBM DB2, and MySQL.
-					</p>
-					<p>
-						I’m proficient in system administration, enterprise system analysis, application development, and creating scalable IT solutions for business growth.
-					</p>
+		<!-- Improved About Section using UIkit grid for precise alignment -->
+		<section id="section-about" class="uk-section uk-section-muted">
+			<div class="uk-container">
+			<div class="uk-grid-large uk-flex-middle" uk-grid>
+				<!-- Profile Image -->
+				<div class="uk-width-1-2@m uk-text-center uk-flex-first@m">
+				<img
+					src="images/tio-grey.png"
+					alt="Muhammad Tio Laksono"
+					class="uk-border-circle"
+					style="object-fit:cover; max-width:280px; width:100%; height:auto;"
+				/>
 				</div>
-				<!-- Image -->
-				<div class="about-image">
-					<img src="images/tio-grey.png" alt="Profile Image">
+		
+				<!-- Text Content -->
+				<div class="uk-width-1-2@m uk-padding-small">
+				<h3 class="uk-heading-medium uk-margin-remove-bottom">Hello, I'm <span class="uk-text-primary">Muhammad Tio Laksono</span></h3>
+				<p class="uk-text-lead uk-margin-small-top">
+					Experienced IT professional with a solid background in IT infrastructure and full‑stack development.
+				</p>
+		
+				<ul class="uk-list uk-list-bullet uk-margin">
+					<li><strong>Experience:</strong> 4 years in IT infrastructure, 5 years as Full‑stack Developer</li>
+					<li><strong>Technologies:</strong> PHP, Laravel, JavaScript, Flutter, Kotlin, Java, HTML5, CSS3</li>
+					<li><strong>Databases:</strong> PostgreSQL, Microsoft SQL Server, IBM DB2, MySQL</li>
+					<li><strong>Skills:</strong> System administration, enterprise system analysis, scalable IT solutions</li>
+				</ul>
 				</div>
 			</div>
-		</div>
+			</div>
+		</section>
 
 	<div uk-scrollspy="cls: uk-animation-fade; target: > div > h3,img,div; delay: 100; repeat: false">
 		<!-- section resume -->
@@ -455,9 +467,9 @@
 					<!-- Portofolio Cards Grid -->
 					<ul class="js-filter uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-grid-medium" uk-grid="masonry: true">
 						<li data-size="software" data-name="anekabusa">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/anekabusa.jpg" alt="itti" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/anekabusa.jpg" alt="itti" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -471,9 +483,9 @@
 							</div>
 						</li>
 						<li data-size="software" data-name="alarmtbc">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/alarmtbc.png" alt="itti" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/alarmtbc.png" alt="itti" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -487,9 +499,9 @@
 							</div>
 						</li>
 						<li data-size="software" data-name="alphalitical">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/alphalitical.jpeg" alt="itti" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/alphalitical.jpeg" alt="itti" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -504,9 +516,9 @@
 							</div>
 						</li>
 						<li data-size="software" data-name="poloralphlaurenindonesia">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/poloralphlauren.jpeg" alt="poloralphlaurenindonesia" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/poloralphlauren.jpeg" alt="poloralphlaurenindonesia" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -520,9 +532,9 @@
 							</div>
 						</li>
 						<li data-size="software" data-name="layar">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/layar.jpeg" alt="layar" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/layar.jpeg" alt="layar" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -536,9 +548,9 @@
 							</div>
 						</li>
 						<li data-size="software" data-name="etalaseapps">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/etalaseapps.jpeg" alt="etalaseapps" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/etalaseapps.jpeg" alt="etalaseapps" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -552,9 +564,9 @@
 							</div>
 						</li>
 						<li data-size="software" data-name="kominfo">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/umkmgoonline.jpeg" alt="kominfo" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/umkmgoonline.jpeg" alt="kominfo" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -568,9 +580,9 @@
 							</div>
 						</li>
 						<li data-size="software" data-name="medosen">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/medosen.jpeg" alt="medosen" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/medosen.jpeg" alt="medosen" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -584,9 +596,9 @@
 							</div>
 						</li>
 						<li data-size="hardware" data-name="untara">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/untara.jpeg" alt="untara" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/untara.jpeg" alt="untara" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
@@ -600,9 +612,9 @@
 							</div>
 						</li>
 						<li data-size="software" data-name="yessindo">
-							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 500px; width: 500px;">
+							<div class="uk-card uk-card-default uk-card-hover uk-box-shadow-medium uk-overflow-hidden" style="height: 550px; width: 550px;">
 								<div class="uk-card-media-top">
-									<img src="images/portfolio/yessindo.png" alt="yessindo" style="height:200px; width:500px; object-fit: contain;">
+									<img src="images/portfolio/yessindo.png" alt="yessindo" style="height:200px; width:550px; object-fit: contain;">
 								</div>
 								<div class="uk-card-body">
 									<h4 class="uk-card-title">
